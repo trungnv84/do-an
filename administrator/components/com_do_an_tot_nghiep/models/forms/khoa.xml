@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+              <field name="id" type="text" default="0" label="COM_DO_AN_TOT_NGHIEP_FORM_LBL_KHOA_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="ma_khoa_hoc" type="text"
+                
+            label="COM_DO_AN_TOT_NGHIEP_FORM_LBL_KHOA_MA_KHOA_HOC"
+            description="COM_DO_AN_TOT_NGHIEP_FORM_DESC_KHOA_MA_KHOA_HOC" 
+                
+                
+                 required="true" 
+            menu_published="0"
+            filter="string"
+            size="30"
+            maxlength="30" /> 
+
+       <field name="ten_khoa_hoc" type="text"
+                
+            label="COM_DO_AN_TOT_NGHIEP_FORM_LBL_KHOA_TEN_KHOA_HOC"
+            description="COM_DO_AN_TOT_NGHIEP_FORM_DESC_KHOA_TEN_KHOA_HOC" 
+                
+                
+                 required="true" 
+            menu_published="0"
+            filter="string"
+            size="60"
+            maxlength="255" /> 
+
+       <field name="mat_khau_sv" type="text"
+                
+            label="COM_DO_AN_TOT_NGHIEP_FORM_LBL_KHOA_MAT_KHAU_SV"
+            description="COM_DO_AN_TOT_NGHIEP_FORM_DESC_KHOA_MAT_KHAU_SV" 
+                
+                
+                 required="true" 
+            menu_published="0"
+            filter="string"
+            size="60"
+            maxlength="30" /> 
+
+       <field name="thoi_gian_bat_dau_dang_ky" type="calendar"
+                
+            label="COM_DO_AN_TOT_NGHIEP_FORM_LBL_KHOA_THOI_GIAN_BAT_DAU_DANG_KY"
+            description="COM_DO_AN_TOT_NGHIEP_FORM_DESC_KHOA_THOI_GIAN_BAT_DAU_DANG_KY" 
+                
+                
+                 required="true" 
+            menu_published="0"
+            filter="string" /> 
+
+       <field name="thoi_gian_ket_thuc_dang_ky" type="calendar"
+                
+            label="COM_DO_AN_TOT_NGHIEP_FORM_LBL_KHOA_THOI_GIAN_KET_THUC_DANG_KY"
+            description="COM_DO_AN_TOT_NGHIEP_FORM_DESC_KHOA_THOI_GIAN_KET_THUC_DANG_KY" 
+                
+                
+                 required="true" 
+            menu_published="0"
+            filter="string" /> 
+
+       <field name="mat_khau_gv" type="text"
+                
+            label="COM_DO_AN_TOT_NGHIEP_FORM_LBL_KHOA_MAT_KHAU_GV"
+            description="COM_DO_AN_TOT_NGHIEP_FORM_DESC_KHOA_MAT_KHAU_GV" 
+                
+                
+                 required="true" 
+            menu_published="0"
+            filter="string"
+            size="60"
+            maxlength="30" /> 
+
+       <field name="thoi_gian_ket_thuc_xac_nhan" type="calendar"
+                
+            label="COM_DO_AN_TOT_NGHIEP_FORM_LBL_KHOA_THOI_GIAN_KET_THUC_XAC_NHAN"
+            description="COM_DO_AN_TOT_NGHIEP_FORM_DESC_KHOA_THOI_GIAN_KET_THUC_XAC_NHAN" 
+                
+                
+                
+            menu_published="0"
+            filter="string" /> 
+
+       <field name="created_by" type="createdby" default="" 
+            label="COM_DO_AN_TOT_NGHIEP_FORM_LBL_KHOA_CREATED_BY"
+            description="COM_DO_AN_TOT_NGHIEP_FORM_DESC_KHOA_CREATED_BY"  /> 
+
+                        <field name="checked_out" type="hidden" filter="unset" />
+        <field name="checked_out_time" type="hidden" filter="unset" />
+
+	</fieldset>
+
+</form>

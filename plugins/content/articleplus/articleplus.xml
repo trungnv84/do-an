@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="content" method="upgrade">
+	<name>Content Article Plus</name>
+	<author>Nguyễn Văn Trung</author>
+	<creationDate>2011-07-26</creationDate>
+	<copyright>Copyright © 2011 Nguyễn Văn Trung (Số CMND: 111712060). All rights reserved.</copyright>
+	<license>Copyright Commercial</license>
+	<authorEmail>trungnv84@ymail.com</authorEmail>
+	<authorUrl>http://www.timbds.com</authorUrl>
+	<version>2.1.1</version>
+	<description>PLG_CONTENT_ARTICLEPLUS_DESCRIPTION</description>
+	<files>
+		<filename plugin="articleplus">articleplus.php</filename>
+		<filename>index.html</filename>
+		<folder>assets</folder>
+	</files>
+	<!--languages>
+		<language tag="en-GB">en-GB.plg_content_articleplus.ini</language>
+		<language tag="en-GB">en-GB.plg_content_articleplus.sys.ini</language>
+		PLG_CONTENT_ARTICLEPLUS_LATEST_ARTICLE_LABEL
+	</languages-->
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="ap_latest_article" type="text" default="6"
+					description="PLG_CONTENT_ARTICLEPLUS_LATEST_ARTICLE_DESC"
+					label="Number of latest news" />
+				<field name="ap_latest_title" type="text" default="Latest news"
+					description="PLG_CONTENT_ARTICLEPLUS_LATEST_TITLE_DESC"
+					label="Title of latest news" />
+				<field name="ap_other_article" type="text" default="6"
+					description="PLG_CONTENT_ARTICLEPLUS_OTHER_ARTICLE_DESC"
+					label="Number of other news" />
+				<field name="ap_other_title" type="text" default="Other news"
+					description="PLG_CONTENT_ARTICLEPLUS_OTHER_TITLE_DESC"
+					label="Title of other news" />
+				<field name="categories" type="category" extension="com_content" label="Not Assignment" description="" size="10" multiple="true">
+					<option value="">- None -</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

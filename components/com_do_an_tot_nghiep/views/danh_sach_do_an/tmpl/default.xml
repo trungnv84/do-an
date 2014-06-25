@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_DO_AN_TOT_NGHIEP_TITLE_LIST_VIEW_DANH_SACH_DO_AN" option="View">
+        <message>
+                        <![CDATA[COM_DO_AN_TOT_NGHIEP_TITLE_LIST_VIEW_DANH_SACH_DO_AN_DESC]]>
+        </message>
+	</layout>
+</metadata>

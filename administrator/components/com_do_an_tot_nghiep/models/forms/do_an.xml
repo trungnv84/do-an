@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+              <field name="id" type="text" default="0" label="COM_DO_AN_TOT_NGHIEP_FORM_LBL_DO_AN_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="ma_sv" type="text"
+                
+            label="COM_DO_AN_TOT_NGHIEP_FORM_LBL_DO_AN_MA_SV"
+            description="COM_DO_AN_TOT_NGHIEP_FORM_DESC_DO_AN_MA_SV" 
+                
+                
+                 required="true" 
+            menu_published="0"
+            filter="string"
+            size="30"
+            maxlength="20" /> 
+
+       <field name="ho_ten" type="text"
+                
+            label="COM_DO_AN_TOT_NGHIEP_FORM_LBL_DO_AN_HO_TEN"
+            description="COM_DO_AN_TOT_NGHIEP_FORM_DESC_DO_AN_HO_TEN" 
+                
+                
+                 required="true" 
+            menu_published="0"
+            filter="string"
+            size="60"
+            maxlength="30" /> 
+
+ 
+		<field name="email" type="email" label="Email" description="Email" validate="email"   /> 
+
+       <field name="dien_thoai" type="text"
+                
+            label="COM_DO_AN_TOT_NGHIEP_FORM_LBL_DO_AN_DIEN_THOAI"
+            description="COM_DO_AN_TOT_NGHIEP_FORM_DESC_DO_AN_DIEN_THOAI" 
+                
+                
+                
+            menu_published="0"
+            filter="string"
+            size="30"
+            maxlength="20" /> 
+
+       <field name="lop" type="text"
+                
+            label="COM_DO_AN_TOT_NGHIEP_FORM_LBL_DO_AN_LOP"
+            description="COM_DO_AN_TOT_NGHIEP_FORM_DESC_DO_AN_LOP" 
+                
+                
+                
+            menu_published="0"
+            filter="string"
+            size="60"
+            maxlength="255" /> 
+
+ <field name="ma_khoa_hoc" type="foreignkey" class="inputbox"
+            label="COM_DO_AN_TOT_NGHIEP_FORM_LBL_DO_AN_MA_KHOA_HOC"
+            description="COM_DO_AN_TOT_NGHIEP_FORM_DESC_DO_AN_MA_KHOA_HOC" input_type="list" table="#__khoa_hoc" key_field="ma_khoa_hoc" value_field="ten_khoa_hoc"  /> 
+
+ <field name="ma_gv_huong_dan" type="foreignkey" class="inputbox"
+            label="COM_DO_AN_TOT_NGHIEP_FORM_LBL_DO_AN_MA_GV_HUONG_DAN"
+            description="COM_DO_AN_TOT_NGHIEP_FORM_DESC_DO_AN_MA_GV_HUONG_DAN" input_type="list" table="#__giao_vien" key_field="ma_giao_vien" value_field="ten_giao_vien"  /> 
+
+       <field name="filter_ma_gv_huong_dan" type="sql" class="inputbox"
+            onchange="this.form.submit();"
+            query="SELECT 0 AS `ma_giao_vien`, '- Please select ma_gv_huong_dan -' AS `val` UNION SELECT `ma_giao_vien`, `ten_giao_vien` AS val FROM `#__giao_vien`" key_field="ma_giao_vien" value_field="val"
+             /> 
+
+       <field name="gv_huong_dan" type="text"
+                
+            label="COM_DO_AN_TOT_NGHIEP_FORM_LBL_DO_AN_GV_HUONG_DAN"
+            description="COM_DO_AN_TOT_NGHIEP_FORM_DESC_DO_AN_GV_HUONG_DAN" 
+                
+                
+                
+            menu_published="0"
+            filter="string"
+            size="60"
+            maxlength="30" /> 
+
+       <field name="gv_xac_nhan_huong_dan" type="list"
+                
+            label="COM_DO_AN_TOT_NGHIEP_FORM_LBL_DO_AN_GV_XAC_NHAN_HUONG_DAN"
+            description="COM_DO_AN_TOT_NGHIEP_FORM_DESC_DO_AN_GV_XAC_NHAN_HUONG_DAN" 
+                 default="0" 
+                
+                
+            menu_published="0"
+            filter="raw"
+            multiple="false">
+                <option value="1">Chưa xác nhận</option>
+                <option value="2">Đồng ý</option>
+                <option value="3">Từ chối</option>
+        </field> 
+
+ <field name="gv_phan_bien" type="foreignkey" class="inputbox"
+            label="COM_DO_AN_TOT_NGHIEP_FORM_LBL_DO_AN_GV_PHAN_BIEN"
+            description="COM_DO_AN_TOT_NGHIEP_FORM_DESC_DO_AN_GV_PHAN_BIEN" input_type="list" table="#__giao_vien" key_field="ma_giao_vien" value_field="ten_giao_vien"  /> 
+
+       <field name="file_do_an" type="file"
+                
+            label="COM_DO_AN_TOT_NGHIEP_FORM_LBL_DO_AN_FILE_DO_AN"
+            description="COM_DO_AN_TOT_NGHIEP_FORM_DESC_DO_AN_FILE_DO_AN" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            upload_directory="files"
+            accept="zip,rar" /> 
+
+       <field name="mo_ta" type="textarea"
+                
+            label="COM_DO_AN_TOT_NGHIEP_FORM_LBL_DO_AN_MO_TA"
+            description="COM_DO_AN_TOT_NGHIEP_FORM_DESC_DO_AN_MO_TA" 
+                
+                
+                
+            menu_published="0"
+            cols="100"
+            rows="8"
+            filter="string" /> 
+
+       <field name="tu_khoa" type="textarea"
+                
+            label="COM_DO_AN_TOT_NGHIEP_FORM_LBL_DO_AN_TU_KHOA"
+            description="COM_DO_AN_TOT_NGHIEP_FORM_DESC_DO_AN_TU_KHOA" 
+                
+                
+                
+            cols="100"
+            rows="8" /> 
+
+       <field name="created_by" type="createdby" default="" 
+            label="COM_DO_AN_TOT_NGHIEP_FORM_LBL_DO_AN_CREATED_BY"
+            description="COM_DO_AN_TOT_NGHIEP_FORM_DESC_DO_AN_CREATED_BY"  /> 
+
+                        <field name="checked_out" type="hidden" filter="unset" />
+        <field name="checked_out_time" type="hidden" filter="unset" />
+
+	</fieldset>
+
+</form>
